@@ -15,9 +15,9 @@ export const AMGCL = async () => {
       amg.setMatrix(matrix)
       return amg 
     },
-    fromCRS(m,n,nnz,a,asub,xa){
+    fromCRS(rows,nnz,ptr,col,val){
       const amg = new AMG(amgcl)
-      amg.setCRS(m,n,nnz,a,asub,xa)
+      amg.setCRS(rows,nnz,ptr,col,val)
       return amg
     }
   }
@@ -92,11 +92,11 @@ const AMG = class{
     return this
   }
   setCRS(rows,nnz,ptr,col,val){
-    this.rows = obj.rows
-    this.nnz  = obj.nnz 
-    this.ptr  = obj.ptr 
-    this.col  = obj.col 
-    this.val  = obj.val 
+    this.rows = rows
+    this.nnz  = nnz 
+    this.ptr  = ptr 
+    this.col  = col 
+    this.val  = val 
 
 
     return this

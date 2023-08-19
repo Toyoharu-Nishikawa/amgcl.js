@@ -1,0 +1,13 @@
+{
+  "name": "amgcl",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "WASM wrapper of OpenBLAS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+

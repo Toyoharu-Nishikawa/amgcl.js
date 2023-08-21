@@ -1,7 +1,7 @@
 {
   "name": "amgcl",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WASM wrapper of OpenBLAS",
   "main": "index.js",
   "scripts": {
